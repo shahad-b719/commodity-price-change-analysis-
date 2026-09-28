@@ -1,1 +1,4 @@
-
+Q1Input <- read_excel("InsInnov.xlsx")
+ggplot(data = Q1Input, aes(x = X, y = Y, col = Type))+
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE)
